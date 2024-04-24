@@ -1,0 +1,78 @@
+Hella (V) administratie
+	inkoopPrijs, verkoopPrijs
+Paulus (M) verkoop
+	aantalProductenPerSoort, aantalPerProduct
+Robin (X) magazijn
+
+
+klassen
+	Product
+		naam
+		type
+		beschrijving
+		prijs
+		voorraad
+		verkocht
+		compatibility
+
+	Personeel
+		NAW
+		salaris
+		rol
+		functie
+
+	Status
+		type<<enum>>
+		locatie
+		wijzigingsTijd
+
+	OrderLine
+		Product
+		aantalVanProduct
+
+	Order
+		orderLine	
+		leveringsAdres
+
+	Tv
+	remote
+	brackets
+	ci-module
+
+
+Functioneel
+
+"Als administratie wil ik dat de applicatie alle inkoop- en verkooptransacties bijhoudt, inclusief de datum, het product, de prijs en de hoeveelheid, omdat ik nauwkeurige financiële gegevens nodig heb voor rapportage en analyse."
+
+"Als productbeheerder wil ik dat het mogelijk is om productinformatie op te slaan, inclusief naam, beschrijving, prijs en beschikbare voorraad, omdat ik een centrale database van producten wil hebben voor nauwkeurig voorraadbeheer en klantinformatie."
+
+"Als analist wil ik een rapportagefunctie waarmee ik gedetailleerde rapporten kan genereren over verschillende aspecten van het bedrijf, zoals omzet, winst en voorraadniveaus, omdat ik inzicht wil hebben in de prestaties van het bedrijf en trends wil identificeren voor strategische besluitvorming."
+
+
+"Als beheerder wil ik dat het systeem verschillende gebruikersrollen ondersteunt, waarbij Hella, Paulus en Robin volledige toegang hebben tot alle functies, terwijl andere personeelsleden beperkte toegang hebben afhankelijk van hun functie, omdat ik de toegangscontrole wil kunnen beheren en de veiligheid van gevoelige informatie wil waarborgen."
+
+"Als verkoopmedewerker wil ik dat de applicatie producten aan elkaar kan koppelen, waarbij wordt aangegeven welke producten bij elkaar passen, omdat ik klanten wil kunnen voorzien van aanvullende opties."
+
+"Als magazijnmedewerker wil ik een voorraadbeheersysteem dat updates geeft over de beschikbare voorraad van elk product, omdat ik efficiënt wil kunnen beheren welke producten beschikbaar zijn en welke moeten worden bijbesteld."
+
+"Als sales wil ik kunnen zien hoeveel van elk product er over een bepaalde periode is verkocht, zodat ik inzicht kan krijgen in de verkoophistorie en trends om beslissingen te nemen over voorraadbeheer en marketingstrategieën."
+
+"Als financieel medewerker wil ik de mogelijkheid hebben om prijzen van zowel inkoop als verkoop in te voeren en te wijzigen, met een historie van prijswijzigingen, omdat ik de prijsstelling van producten wil kunnen aanpassen en rapporteren over winstmarges."
+
+
+"Als klantenservicemedewerker wil ik het beheren van klantgegevens mogelijk maken, inclusief contactinformatie en eerdere aankopen, omdat ik klanten efficiënt wil kunnen helpen en gepersonaliseerde service wil bieden."
+
+"Als gebruiker wil ik een zoekfunctionaliteit waarmee ik snel specifieke producten kan vinden op basis van verschillende criteria, zoals naam, categorie of merk, omdat ik efficiënt wil kunnen navigeren door het productassortiment om aan de behoeften van klanten te voldoen."
+
+Niet-functioneel
+
+"Als ontwikkelaar wil ik dat het systeem flexibel is en gemakkelijk aanpasbaar, zodat het kan worden aangepast aan veranderende zakelijke behoeften en nieuwe functionaliteiten kunnen worden toegevoegd in de toekomst, omdat ik de levensduur van de applicatie wil verlengen en de waarde ervan wil maximaliseren."
+
+
+"Als systeembeheerder wil ik dat het systeem veilig is, met mogelijkheden voor gebruikersauthenticatie en gegevensbescherming om de privacy van klant- en bedrijfsinformatie te waarborgen, omdat ik de integriteit en vertrouwelijkheid van gegevens wil beschermen."
+
+"Als IT-manager wil ik dat de applicatie schaalbaar is, zodat het kan meegroeien met de behoeften van het bedrijf naarmate het zich ontwikkelt en uitbreidt, omdat ik de investeringen in IT-systemen wil maximaliseren en toekomstige groei wil ondersteunen."
+
+"Als gebruiker wil ik een overzichtelijke interface hebben die gemakkelijk te navigeren is, zodat ik snel de gewenste informatie kan vinden en efficiënt kan werken zonder onnodige vertragingen."
+
+\"Als magazijnmedewerker wil ik automatisch meldingen ontvangen wanneer de voorraad van een bepaald product een bepaald minimumniveau bereikt, zodat ik tijdig kan bijbestellen en tekorten kan voorkomen."
